@@ -3,7 +3,8 @@ package parcialdosprogra;
 
 
 public class TarjetasBancariasPd {
-    //atributos
+
+     //atributos
     private int limiteCredito;
     private int limiteDebito;
     private  String nombreTarjeta;
@@ -36,14 +37,14 @@ public class TarjetasBancariasPd {
     }
     
     
-     public String getNombreTarjeta() {
-        return nombreTarjeta;
-    }
-
-    public void setNombreTarjeta(String nombreTarjeta) {
-        this.nombreTarjeta = nombreTarjeta;
+    TarjetasBancariasPd(String nombreTarjeta){
+        this.nombreTarjeta="HELEN ACEVEDO TOBAR";
     }
     
+    public String getnombreTarjeta(){
+        return this.nombreTarjeta;
+    }
+   
     public double metodoSaldoCredito (int limite,double saldo){
         int saldoActual;
         
@@ -57,7 +58,8 @@ public class TarjetasBancariasPd {
         saldoActual= (int) (limiteDebito-comprar);
         return saldoActual;
         
+      
+        
     
     }
-    
 }

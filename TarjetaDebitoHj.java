@@ -4,16 +4,14 @@ package parcialdosprogra;
 
 public class TarjetaDebitoHj extends TarjetasBancariasPd {
     
-   int deposito;
-   
-   public int metodoDeposito (int saldoActual,int deposito){
-         int saldoDebito;
-         saldoDebito = deposito+saldoActual;
-         
-         return saldoDebito;
-   
-   }
+    public int metodoDepositar(int depositar, int saldoActual){
     
+        int deposito;
+        deposito=saldoActual+depositar;
+        return deposito;
+    }
+    
+   
     
     
 }
