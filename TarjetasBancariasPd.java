@@ -16,8 +16,17 @@ public class TarjetasBancariasPd {
         this.limiteCredito=10000;
         this.limiteDebito=5000;
         this.nombreTarjeta="HELEN ACEVEDO";
+        this.numeroTarjeta=123456789;
     }
     //metodo de clase padre
+
+    public int getNumeroTarjeta() {
+        return numeroTarjeta;
+    }
+
+    public void setNumeroTarjeta(int numeroTarjeta) {
+        this.numeroTarjeta = numeroTarjeta;
+    }
 
     public int getLimiteDebito() {
         return limiteDebito;
@@ -36,6 +45,7 @@ public class TarjetasBancariasPd {
         return this.limiteCredito;
     }
     
+   
     
     TarjetasBancariasPd(String nombreTarjeta){
         this.nombreTarjeta="HELEN ACEVEDO TOBAR";
@@ -44,7 +54,8 @@ public class TarjetasBancariasPd {
     public String getnombreTarjeta(){
         return this.nombreTarjeta;
     }
-   
+    
+ 
     public double metodoSaldoCredito (int limite,double saldo){
         int saldoActual;
         
