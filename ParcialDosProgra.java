@@ -41,6 +41,8 @@ public class ParcialDosProgra {
                 int cc;
                 System.out.println("Introduzca el monto de lo que desea comprar");
                 cc=comprade.nextInt();
+                 TarjetaCreditoHj pagars=new TarjetaCreditoHj();
+                System.out.println("FORMA DE PAGO "+ pagars.metodoPagar+"\n");
                 
                 
                      
