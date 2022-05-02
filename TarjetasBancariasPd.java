@@ -11,7 +11,7 @@ public class TarjetasBancariasPd {
     private double comprar;
     
     //contructores
-    public TarjetasBancariasPd (){
+    public TarjetasBancariasPd (int limiteCredito, int limiteDebito,String nombreTarjeta,int numeroTarjeta,double comprar){
         this.limiteCredito=10000;
         this.limiteDebito=5000;
         this.nombreTarjeta="HELEN ACEVEDO";
@@ -25,13 +25,14 @@ public class TarjetasBancariasPd {
     public void setLimiteDebito(int limiteDebito) {
         this.limiteDebito = limiteDebito;
     }
- 
-    public int getLimiteCredito() {
-        return limiteCredito;                        //getter and setter para el limitecredito
+    
+    
+    TarjetasBancariasPd(int limiteCredito){
+        this.limiteCredito=10000;
     }
 
-    public void setLimiteCredito(int limiteCredito) {
-        this.limiteCredito = limiteCredito;
+    public int getlimiteCredito() {
+        return this.limiteCredito;
     }
     
     
@@ -55,6 +56,7 @@ public class TarjetasBancariasPd {
         
         saldoActual= (int) (limiteDebito-comprar);
         return saldoActual;
+        
     
     }
     

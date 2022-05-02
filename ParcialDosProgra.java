@@ -10,7 +10,8 @@ public class ParcialDosProgra {
         TarjetasBancariasPd padre= new TarjetasBancariasPd ();
         TarjetaCreditoHj hija1= new TarjetaCreditoHj();
         TarjetaDebitoHj hija2= new TarjetaDebitoHj();
-      
+           
+        
         System.out.println("USO DE TARJETAS DE CREDITO/DEBITO\n");
         System.out.println("A continuacion seleccione la tarjeta bancaria que utilizara");
         System.out.println("1.Tarjeta de Credito");
@@ -23,8 +24,11 @@ public class ParcialDosProgra {
         switch(opc ){
             
             case 1:
-                System.out.println("Ingreso a la opcion de Tarjeta de Crédito bienvenido");
-                System.out.println("Su limite de saldo es de: ");
+                System.out.println("Ingreso a la opcion de Tarjeta de Credito bienvenido");
+                TarjetasBancariasPd obj= new TarjetasBancariasPd();
+                int limiteCredito= TarjetasBancariasPd.getlimiteCredito();
+                System.out.println("Su limite de saldo es de: "+limiteCredito);
+                
         
                 
         }
